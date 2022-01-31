@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Code Quiz Challenge</title>
+</head>
+
+
+<body>
+    <!-- View High Scores and Timer -->
+    <header>
+        <h4 id="view-high-scores">View High Scores</h4>
+        <h4 class="timer">Time Left: <span id="timer"></span></h4>
+    </header>
+
+    <!-- Start Page -->
+    <div id="starter-container" class="show">
+        <div class="container start">
+            <h1>Code Quiz Challenge</h1>
+            <p>Answer the following code-related questions within the time-limit. Keep in mind that wrong
+                answers will penalize your score by 10 points and your time by 10 seconds! </p>
+            <button class="btn startend" id="start-game">Start Game</div>
+        </div>
+    </div>
+    
+    <!-- Quiz Page -->
+    <div id="quiz-container" class="hide">
+        <div class="container question">
+            <div id="question"></div>
+            <div id="answer-buttons" class="btn-grid"></div>
+        </div>
+    </div>
+
+    <!-- Final Score Page -->
+    <div id="end-container" class="hide">
+        <div class="container end">
+            <div id="score-banner">
+                <h2>All done!</h2>
+            </div>
+            <form id="initials-form" class="initials">
+                <p>Enter initials:
+                    <input type="text" name="initials" id="initials" class="text-input"/>
+                <button class="btn startend" id="submit-score" type="submit">Submit</button></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- High Scores Page -->
+    <div id="high-score-container" class="hide">
+        <div class="high-scores container">
+            <h2 class="high-scores">High Scores</h2>
+            <ol id="high-score-list" class="score-list"></ol>
+            <button class="btn" id="go-back">Go Back</button>
+            <button class="btn" id="clear-high-scores">Clear</button>
+    </div>
+    </div>
+
+    <!-- Correct/Wrong answer prompts on quiz containers -->
+    <div class="hide" id="correct">
+        <h3>Correct!</h3>
+    </div>
+
+    <div class="hide" id="wrong">
+        <h3>Wrong!</h3>
+    </div>
+
+
+    <script src=./assets/js/script.js></script>
+</body>
+
+</html>
+</html>

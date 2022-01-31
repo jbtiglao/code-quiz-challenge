@@ -1,0 +1,223 @@
+/* Description: Primary stylesheet for Homework 4, Code QUiz Challenge */
+/* Author: Jane Tiglao */
+
+:root {
+    --color: black;
+    --text-align: center;
+    --font-size: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: whitesmoke;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    display: flex;
+    color: blueviolet;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+}
+
+h1 {
+    align-items: center;
+    text-align: var(--text-align);
+    color: var(--color);
+}
+h2 {
+ 
+    text-align: left;
+    color: var(black);
+} 
+
+h4 {
+    padding-left: 30px;
+    display: inline;
+    font-size: var(--font-size);
+}
+
+p {
+    text-align: var(--text-align);
+    font-size: var(--font-size);
+}
+
+/* View High Scores and Timer */
+.timer {
+    display: inline;
+    padding-right: 30px;
+    text-align: right;
+    color: black;
+    font-size: var(--font-size);
+}
+
+#view-highscores:hover {
+    cursor: pointer;
+    color: purple;
+}
+
+
+/* Quiz Page */
+.container {
+    padding: 30px;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+
+}
+
+.start {
+    align-items: center;
+    text-align: var(--text-align);
+}
+
+.start h1, .start p {
+    text-align: var(--text-align)
+}
+
+.questions {
+    margin: auto;
+    padding: 40px 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.end h1, .end p {
+    text-align: left;
+}
+
+.end input {
+    padding: 5px;
+    width: 35%;
+    outline: thick;
+    border-width: 1px;
+    font-size: var(--font-size);
+    border-radius: 4px;
+}
+
+.end-input:focus {
+    border: 2px solid darkgray;
+}
+
+.show {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+#question {
+    color: var(--color);
+    text-align: left;
+    font-size: var(--font-size);
+    font-weight: normal;
+}
+
+#high-score {
+    text-align: left;
+}
+
+
+/* Correct/Wrong answer prompts */
+.banner {
+    margin: 0 100px;
+    font-size: var(--font-size);
+    text-align: left;
+    color: gray;
+    font-style: italic;
+}
+
+.banner h2 {
+    border-top: 20px solid black;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+}
+
+/* High scores list */
+ol {
+    list-style-type: number;
+}
+
+li:nth-child(odd) {
+    background-color: lavender;
+}
+
+li {
+    font-size: var(--font-size);
+}
+
+/* Buttons */
+.btn {
+    margin-top: 30px;
+    padding: 5px;
+    align-items: center;
+    text-align: var(--text-align);
+    font-size: var(--font-size);
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: purple;
+    cursor: pointer;
+}
+
+.btn:active {
+    border: none;
+    box-shadow: 0 0 gray;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn-grid {
+    display: -ms-grid; 
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    -ms-grid-row: repeat(4, auto);
+    grid-gap: 5px;
+    margin: 20px 0;
+}
+
+.startend {
+    width: 25%;
+    margin-top: 10px;
+}
+
+.answerbtn {
+    width: 50%;
+    text-align: left;
+    font-size: var(--font-size);
+    margin-top: 10px;
+}
+
+/* Media query */
+@media screen and (max-width: 1024px) {
+    .btn {
+        width: 100%;
+        font-size: 3.0vw;
+    }
+
+    #question {
+        font-size: 4.0vw;
+    }
+
+    h1 {
+        font-size: 4.0vw;
+    }
+
+    p {
+        font-size: 4.0vw;
+    }
+}
