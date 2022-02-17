@@ -105,3 +105,7 @@ The following books, materials, websites, and other resources were consulted in 
 * https://stackoverflow.com for troubleshooting coding and functionalities questions on timer, localStorage, and other JS functionalities. 
 
 * https://youtube.com for tutorials on building JavaScript Code Quiz.
+
+
+## License
+MIT License. Please see LICENSE on the application's GitHub repository.
